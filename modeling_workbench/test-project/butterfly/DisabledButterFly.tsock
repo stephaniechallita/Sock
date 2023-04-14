@@ -1,0 +1,34 @@
+IotSystem DisabledButterFly {
+	currentTime 0
+	ownedActor {
+		Actor ControllerVehiculePositionning {
+			isSensible 0
+			processTime 7
+			periodTime 15
+			currentProcessTime 0
+			resource "CPU"
+			code "import fr.inria.kairos.sock.dsl.attacks.butterfly.VehiculPositionning;
+import fr.inria.kairos.sock.utils.IOUtils;
+IOUtils.PATH_OUTPUT = outputFolder;
+VehiculPositionning.instance.order(time);
+"
+		},
+		Actor DCMotor {
+			isSensible 0
+			processTime 3
+			periodTime 30
+			currentProcessTime 0
+			resource "CPU"
+			code "import fr.inria.kairos.sock.dsl.attacks.butterfly.DCMotor;
+import fr.inria.kairos.sock.utils.IOUtils;
+IOUtils.PATH_OUTPUT = outputFolder;
+DCMotor.instance.accelerate(time);
+"
+		}
+	}
+	ownedResource {
+		Resource CPU {
+			actor ("ControllerVehiculePositionning", "DCMotor")
+		}
+	}
+}

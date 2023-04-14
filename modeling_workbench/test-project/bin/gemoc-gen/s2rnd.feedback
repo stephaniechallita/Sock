@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="ASCII"?>
+<feedback:ActionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:feedback="http://timesquare.inria.fr/feedback">
+  <events name="MSE_s2rnd_0_timeEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#/"/>
+    <action href="http://kairos.inria.fr/sock#//IotSystem/time"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.0"/>
+  </events>
+  <events name="MSE_a0060070_1_butterflyAttackActorEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.2"/>
+  </events>
+  <events name="MSE_a1060070_2_butterflyAttackActorEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.3"/>
+  </events>
+  <events name="MSE_a0060070_1_taskCompletedActorEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.4"/>
+  </events>
+  <events name="MSE_a1060070_2_taskCompletedActorEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.5"/>
+  </events>
+  <events name="MSE_a0060070_1_exitActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.6"/>
+  </events>
+  <events name="MSE_a1060070_2_exitActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.7"/>
+  </events>
+  <events name="MSE_r060070_3_isEnteredResourceEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.8"/>
+  </events>
+  <events name="MSE_r060070_3_isProcessedResourceEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.9"/>
+  </events>
+  <events name="MSE_r060070_3_isExitedResourceEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.10"/>
+  </events>
+  <events name="MSE_r060070_3_idleResourceEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedResource.0"/>
+    <action href="http://kairos.inria.fr/sock#//Resource/idle"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.11"/>
+  </events>
+  <events name="MSE_r060070_3_anActorIsTakenOverByAnotherOneResourceEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.12"/>
+  </events>
+  <events name="MSE_a0060070_1_enterActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.13"/>
+  </events>
+  <events name="MSE_a1060070_2_enterActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.14"/>
+  </events>
+  <events name="MSE_a0060070_1_processActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/process"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.15"/>
+  </events>
+  <events name="MSE_a1060070_2_processActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/process"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.16"/>
+  </events>
+  <events name="MSE_a0060070_1_idleActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/idle"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.17"/>
+  </events>
+  <events name="MSE_a1060070_2_idleActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/idle"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.18"/>
+  </events>
+  <events name="MSE_a0060070_1_isTakenOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.23"/>
+  </events>
+  <events name="MSE_a1060070_2_isTakenOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.24"/>
+  </events>
+  <events name="MSE_a0060070_1_takesOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.25"/>
+  </events>
+  <events name="MSE_a1060070_2_takesOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.26"/>
+  </events>
+  <events name="MSE_a0060070_1_periodStartActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/ready"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.27"/>
+  </events>
+  <events name="MSE_a1060070_2_periodStartActorEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/ready"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.28"/>
+  </events>
+  <events name="MSE_r060070_3_cleanResourceEvent">
+    <caller href="../schedule_side_channel_attacks/s2rnd.tsock#//@ownedResource.0"/>
+    <action href="http://kairos.inria.fr/sock#//Resource/clean"/>
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.31"/>
+  </events>
+  <events name="MSE_a0060070_1_exitSensibleActorEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.32"/>
+  </events>
+  <events name="MSE_a1060070_2_exitSensibleActorEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.33"/>
+  </events>
+  <events name="MSE_a0060070_1_exitNotSensibleActorEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.34"/>
+  </events>
+  <events name="MSE_a1060070_2_exitNotSensibleActorEvent">
+    <solverEvent href="s2rnd.timemodel#//@subBlock.0/@elements.35"/>
+  </events>
+  <importStatements importURI="platform:/1"/>
+</feedback:ActionModel>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="ASCII"?>
+<trace:MSEModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:concurrent_mse="http://www.gemoc.org/gemoc_execution_engine_concurrent_mse" xmlns:trace="http://www.gemoc.org/generic_trace">
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_sockExample_0_timeEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.0"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_butterflyAttackActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.1"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_butterflyAttackActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.2"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_butterflyAttackActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.3"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_taskCompletedActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.4"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_taskCompletedActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.5"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_taskCompletedActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.6"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_exitActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.7"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_exitActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.8"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_exitActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.9"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_r_4_isEnteredResourceEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.10"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_r_4_isProcessedResourceEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.11"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_r_4_isExitedResourceEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.12"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_r_4_idleResourceEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.13"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_r_4_anActorIsTakenOverByAnotherOneResourceEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.14"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_enterActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.15"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_enterActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.16"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_enterActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.17"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_processActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.18"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_processActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.19"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_processActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.20"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_idleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.21"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_idleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.22"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_idleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.23"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_isTakenOverActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.24"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_isTakenOverActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.25"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_isTakenOverActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.26"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_takesOverActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.27"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_takesOverActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.28"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_takesOverActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.29"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_periodStartActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.30"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_periodStartActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.31"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_periodStartActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.32"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_r_4_cleanResourceEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.33"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_exitSensibleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.34"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_exitSensibleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.35"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_exitSensibleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.36"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_a_1_exitNotSensibleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.37"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_b_2_exitNotSensibleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.38"/>
+  </ownedMSEs>
+  <ownedMSEs xsi:type="concurrent_mse:FeedbackMSE" name="MSE_c_3_exitNotSensibleActorEvent">
+    <feedbackModelSpecificEvent href="sockExample.feedback#//@events.39"/>
+  </ownedMSEs>
+</trace:MSEModel>

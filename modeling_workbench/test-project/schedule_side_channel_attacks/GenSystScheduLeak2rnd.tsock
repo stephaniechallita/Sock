@@ -1,0 +1,31 @@
+IotSystem GenSystScheduLeak2rnd {
+	currentTime 0
+	ownedActor {
+		Actor ar00 {
+			isSensible 0
+			processTime 1
+			periodTime 10
+			currentProcessTime 0
+			resource "r0"
+		},
+		Actor ar01 {
+			isSensible 0
+			processTime 4
+			periodTime 25
+			currentProcessTime 0
+			resource "r0"
+		},
+		Actor ar02 {
+			isSensible 1
+			processTime 1
+			periodTime 20
+			currentProcessTime 0
+			resource "r0"
+		}
+	}
+	ownedResource {
+		Resource r0 {
+			actor ("ar00", "ar01", "ar02")
+		}
+	}
+}

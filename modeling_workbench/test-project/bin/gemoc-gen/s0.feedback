@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="ASCII"?>
+<feedback:ActionModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:feedback="http://timesquare.inria.fr/feedback">
+  <events name="MSE_s0_0_timeEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#/"/>
+    <action href="http://kairos.inria.fr/sock#//IotSystem/time"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.0"/>
+  </events>
+  <events name="MSE_a1060070_1_butterflyAttackActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.2"/>
+  </events>
+  <events name="MSE_a0060070_2_butterflyAttackActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.3"/>
+  </events>
+  <events name="MSE_a2060070_3_butterflyAttackActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.4"/>
+  </events>
+  <events name="MSE_a3060070_4_butterflyAttackActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.5"/>
+  </events>
+  <events name="MSE_a1060070_1_taskCompletedActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.6"/>
+  </events>
+  <events name="MSE_a0060070_2_taskCompletedActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.7"/>
+  </events>
+  <events name="MSE_a2060070_3_taskCompletedActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.8"/>
+  </events>
+  <events name="MSE_a3060070_4_taskCompletedActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.9"/>
+  </events>
+  <events name="MSE_a1060070_1_exitActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.10"/>
+  </events>
+  <events name="MSE_a0060070_2_exitActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.11"/>
+  </events>
+  <events name="MSE_a2060070_3_exitActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.2"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.12"/>
+  </events>
+  <events name="MSE_a3060070_4_exitActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.3"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.13"/>
+  </events>
+  <events name="MSE_r060070_5_isEnteredResourceEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.14"/>
+  </events>
+  <events name="MSE_r060070_5_isProcessedResourceEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.15"/>
+  </events>
+  <events name="MSE_r060070_5_isExitedResourceEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.16"/>
+  </events>
+  <events name="MSE_r060070_5_idleResourceEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedResource.0"/>
+    <action href="http://kairos.inria.fr/sock#//Resource/idle"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.17"/>
+  </events>
+  <events name="MSE_r060070_5_anActorIsTakenOverByAnotherOneResourceEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.18"/>
+  </events>
+  <events name="MSE_a1060070_1_enterActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.19"/>
+  </events>
+  <events name="MSE_a0060070_2_enterActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.20"/>
+  </events>
+  <events name="MSE_a2060070_3_enterActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.2"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.21"/>
+  </events>
+  <events name="MSE_a3060070_4_enterActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.3"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.22"/>
+  </events>
+  <events name="MSE_a1060070_1_processActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/process"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.23"/>
+  </events>
+  <events name="MSE_a0060070_2_processActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/process"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.24"/>
+  </events>
+  <events name="MSE_a2060070_3_processActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.2"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/process"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.25"/>
+  </events>
+  <events name="MSE_a3060070_4_processActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.3"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/process"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.26"/>
+  </events>
+  <events name="MSE_a1060070_1_idleActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/idle"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.27"/>
+  </events>
+  <events name="MSE_a0060070_2_idleActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/idle"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.28"/>
+  </events>
+  <events name="MSE_a2060070_3_idleActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.2"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/idle"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.29"/>
+  </events>
+  <events name="MSE_a3060070_4_idleActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.3"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/idle"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.30"/>
+  </events>
+  <events name="MSE_a1060070_1_isTakenOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.39"/>
+  </events>
+  <events name="MSE_a0060070_2_isTakenOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.40"/>
+  </events>
+  <events name="MSE_a2060070_3_isTakenOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.2"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.41"/>
+  </events>
+  <events name="MSE_a3060070_4_isTakenOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.3"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/exitOf"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.42"/>
+  </events>
+  <events name="MSE_a1060070_1_takesOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.43"/>
+  </events>
+  <events name="MSE_a0060070_2_takesOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.44"/>
+  </events>
+  <events name="MSE_a2060070_3_takesOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.2"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.45"/>
+  </events>
+  <events name="MSE_a3060070_4_takesOverActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.3"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/enterIn"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.46"/>
+  </events>
+  <events name="MSE_a1060070_1_periodStartActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.1"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/ready"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.47"/>
+  </events>
+  <events name="MSE_a0060070_2_periodStartActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.0"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/ready"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.48"/>
+  </events>
+  <events name="MSE_a2060070_3_periodStartActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.2"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/ready"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.49"/>
+  </events>
+  <events name="MSE_a3060070_4_periodStartActorEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedActor.3"/>
+    <action href="http://kairos.inria.fr/sock#//Actor/ready"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.50"/>
+  </events>
+  <events name="MSE_r060070_5_cleanResourceEvent">
+    <caller href="../schedule_side_channel_attacks/s0.tsock#//@ownedResource.0"/>
+    <action href="http://kairos.inria.fr/sock#//Resource/clean"/>
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.55"/>
+  </events>
+  <events name="MSE_a1060070_1_exitSensibleActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.56"/>
+  </events>
+  <events name="MSE_a0060070_2_exitSensibleActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.57"/>
+  </events>
+  <events name="MSE_a2060070_3_exitSensibleActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.58"/>
+  </events>
+  <events name="MSE_a3060070_4_exitSensibleActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.59"/>
+  </events>
+  <events name="MSE_a1060070_1_exitNotSensibleActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.60"/>
+  </events>
+  <events name="MSE_a0060070_2_exitNotSensibleActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.61"/>
+  </events>
+  <events name="MSE_a2060070_3_exitNotSensibleActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.62"/>
+  </events>
+  <events name="MSE_a3060070_4_exitNotSensibleActorEvent">
+    <solverEvent href="s0.timemodel#//@subBlock.0/@elements.63"/>
+  </events>
+  <importStatements importURI="platform:/1"/>
+</feedback:ActionModel>

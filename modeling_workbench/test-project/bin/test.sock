@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sock:IotSystem xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:sock="http://kairos.inria.fr/sock" name="s">
+  <ownedActor name="a" resource="//@ownedResource.0" isSensible="1" periodTime="15" code=""/>
+  <ownedActor name="b" resource="//@ownedResource.0" processTime="5" periodTime="25"/>
+  <ownedResource name="r" actor="//@ownedActor.1 //@ownedActor.0"/>
+</sock:IotSystem>

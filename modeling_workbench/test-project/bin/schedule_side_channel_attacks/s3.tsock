@@ -1,0 +1,31 @@
+IotSystem s3 {
+	currentTime 0
+	ownedActor {
+		Actor a0060070 {
+			isSensible 1
+			processTime 3
+			periodTime 25
+			currentProcessTime 0
+			resource "r060070"
+		},
+		Actor a1060070 {
+			isSensible 1
+			processTime 1
+			periodTime 40
+			currentProcessTime 0
+			resource "r060070"
+		},
+		Actor a2060070 {
+			isSensible 1
+			processTime 4
+			periodTime 20
+			currentProcessTime 0
+			resource "r060070"
+		}
+	}
+	ownedResource {
+		Resource r060070 {
+			actor ("a0060070", "a1060070", "a2060070")
+		}
+	}
+}

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+ Contributors:
+ - Stéphanie Challita <stephanie.challita@inria.fr>
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>fr.inria.kairos</groupId>
+  <artifactId>sock.dsl.parent</artifactId>
+  <version>2.3.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <modules>
+    <!-- plugins -->
+        <module>ccsljava_engine/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaengine</module>
+        <module>ccsljava_engine/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaengine.extensions.k3</module>
+        <module>ccsljava_engine/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaengine.extensions.k3.rtd.modelstate</module>
+        <module>ccsljava_engine/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaengine.extensions.timesquare</module>
+        <module>ccsljava_engine/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaengine.mse.model</module>
+        <module>ccsljava_engine/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaengine.stimuli_scenario.model</module>
+        <module>ccsljava_engine/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaengine.ui</module>
+        <module>ccsljava_xdsml/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaxdsml.api</module>
+        <module>ccsljava_xdsml/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaxdsml.ui</module>
+        <module>ccsljava_xdsml/plugins/org.eclipse.gemoc.execution.concurrent.ccsljavaxdsml.utils</module>
+        <!-- <module>ccsljava_xdsml/plugins/org.eclipse.gemoc.execution.moccml.example.deployer</module> -->
+        <module>concurrent_addons/plugins/org.eclipse.gemoc.addon.vcdgenerator</module>
+        <module>concurrent_addons/plugins/org.eclipse.gemoc.addon.metaprogramming</module>
+        <!-- <module>concurrent_addons/plugins/org.eclipse.gemoc.addon.papyrusmodelanimator</module> -->
+        <module>concurrent_addons/plugins/org.eclipse.gemoc.addon.eventscheduling.timeline</module>
+
+        <!-- Releng -->
+        <module>features/fr.inria.kairos.sock</module>
+
+        <module>fr.inria.kairos.sock.dsl.model</module>
+        <module>fr.inria.kairos.sock.dsl.model.edit</module>
+        <module>fr.inria.kairos.sock.dsl.model.editor</module>
+        <module>fr.inria.kairos.sock.dsl.attacks</module>
+        <module>fr.inria.kairos.sock.decider</module>
+        <module>fr.inria.kairos.sock.dsl.moccml</module>
+        <module>fr.inria.kairos.sock.dsl.dse</module>
+        <module>fr.inria.kairos.sock.dsl.k3dsa</module>
+        <module>fr.inria.kairos.sock.dsl</module>
+        <module>fr.inria.kairos.sock.dsl.concretesyntax</module>
+        <module>fr.inria.kairos.sock.dsl.concretesyntax.ide</module>
+        <module>fr.inria.kairos.sock.dsl.concretesyntax.tests</module>
+        <module>fr.inria.kairos.sock.dsl.concretesyntax.ui</module>
+        <module>fr.inria.kairos.sock.dsl.concretesyntax.ui.tests</module>
+        <module>fr.inria.kairos.sock.dsl.design</module>
+  </modules>
+
+  <profiles>
+    <profile>
+      <!-- Type mvn -Pbuild.products to activate this profile. -->
+      <id>build.products</id>
+      <modules>
+        <module>repositories/fr.inria.kairos.sock.dsl.repository</module>
+        <module>repositories/fr.inria.kairos.sock.dsl.product</module>
+      </modules>
+    </profile>
+  </profiles>
+
+  <properties>
+    <tycho-version>1.0.0</tycho-version>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+    <repositories>
+
+      	<!-- List of P2 repositories of external tool used to build the components -->
+      	<!--  must NOT include the repositories of the tools included in the Studio has it has its own complementary list -->
+            <repository>
+                <id>Photon release</id>
+                <layout>p2</layout>
+                <url>http://download.eclipse.org/releases/photon/</url>
+            </repository>
+            <repository>
+                <id>timesquare</id>
+                <layout>p2</layout>
+                <url>http://www.i3s.unice.fr/~deantoni/photon/</url>
+    <!--             <url>http://timesquare.inria.fr/update_site/photon</url> -->
+            </repository>
+    		<repository>
+                <id>kermeta-3</id>
+                <layout>p2</layout>
+                <url>http://www.kermeta.org/k3/update_2018-09-05</url>
+            </repository>
+            <repository>
+                <id>melange</id>
+                <layout>p2</layout>
+                <url>http://melange.inria.fr/updatesite/nightly/update_2019-01-25/</url>
+            </repository>
+            <repository>
+                <id>Sirius</id>
+                <layout>p2</layout>
+                <url>http://download.eclipse.org/sirius/updates/releases/6.0.2/photon</url>
+            </repository>
+            <repository>
+                <id>nebula</id>
+                <layout>p2</layout>
+                <url>http://archive.eclipse.org/nebula/Q22016/incubation</url>
+            </repository>
+            <repository>
+                <id>gemoc_non_concurrent</id>
+                <layout>p2</layout>
+                <url>http://download.eclipse.org/gemoc/updates/nightly/</url>
+            </repository>
+
+            <repository> <!-- indirectly, required by the test that indirectly grabs sequential_addon.stategraph that depends on it -->
+                <id>elk</id>
+                <layout>p2</layout>
+                <url>http://download.eclipse.org/elk/updates/releases/0.1.0/</url>
+            </repository>
+    		<repository> <!-- used in some tests -->
+                <id>Groovy4Eclipse</id>
+                <layout>p2</layout>
+                <url>http://dist.springsource.org/snapshot/GRECLIPSE/e4.6/</url>
+            </repository>
+
+            <repository> <!-- used in some tests -->
+                <id>AspectJ</id>
+                <layout>p2</layout>
+                <url>http://download.eclipse.org/tools/ajdt/46/dev/update</url>
+            </repository>
+            <repository> <!-- this repo is used to provide jdom and jaxen plugins -->
+                <id>app4mc</id>
+                <layout>p2</layout>
+                <url>http://download.eclipse.org/app4mc/updatesites/releases/0.8.0/</url>
+            </repository>
+
+    <!-- configure p2 repository to resolve against -->
+	<repository>
+      <id>photon</id>
+      <layout>p2</layout>
+      <url>http://download.eclipse.org/releases/photon</url>
+    </repository>
+
+    <repository>
+      <id>mvnrepository</id>
+      <url>http://repo1.maven.org/maven2</url>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+
+    <repository>
+    <id>epsilonrepository</id>
+     <url>http://download.eclipse.org/epsilon/updates/</url>
+     <layout>p2</layout>
+    </repository>
+  </repositories>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>oss.sonatype.org-snapshots</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <!-- enable tycho build extension -->
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-maven-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <extensions>true</extensions>
+      </plugin>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>target-platform-configuration</artifactId>
+        <version>${tycho-version}</version>
+        <configuration>
+          <environments>
+            <environment>
+              <os>win32</os>
+              <ws>win32</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>linux</os>
+              <ws>gtk</ws>
+              <arch>x86_64</arch>
+            </environment>
+            <environment>
+              <os>macosx</os>
+              <ws>cocoa</ws>
+              <arch>x86_64</arch>
+            </environment>
+          </environments>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+</project>

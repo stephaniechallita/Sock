@@ -1,0 +1,76 @@
+AutomataConstraintLibrary resourceUsageCycle {
+	
+	import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as kernel;
+	import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as CCSLLib;
+
+	RelationLibrary ResourceUsageCycleLibrary {
+		
+		AutomataRelationDefinition ResourceUsageCycleRelationDefinition [ResourceUsageCycleRelation] {
+			
+			/* 
+			 * TRANSITIONS DEFINITION
+			 */ 
+			
+			init: Start
+			
+			from Start to Free : starting
+			-> ()
+			
+			from Free to Busy : isEntered
+			-> (when ResourceUsageCycleIsEnteredEvent)
+			
+			from Free to Free : idle
+			-> (when ResourceUsageCycleIdleEvent)
+			
+			from Busy to Free : isExited
+			-> (when ResourceUsageCycleIsExitedByNotPriorityActorEvent)
+			
+			from Busy to Cleaning : isExited
+			-> (when isExited if (actorIsSensible.value == one))
+			
+			from Busy to Busy : isProcessed
+			-> (when ResourceUsageCycleIsProcessedEvent)
+			
+			from Busy to Busy : exitAndEnter
+			-> (when ResourceusageCycleExitOfAndEnterInEvent)
+			
+			from Cleaning to Free : clean
+			-> (when ResourceusageCycleCleanEvent)
+			
+			/* 
+			 * STATES DEFINITION
+			 */ 
+			
+			State Start (
+				out: starting
+			)
+			
+			State Free (
+				in: starting, idle, isExited, clean
+				out: isEntered, idle
+			)
+			
+			State Busy (
+				in: isEntered, isProcessed, exitAndEnter
+				out: isExited, isProcessed, exitAndEnter, isExited
+			)
+			
+			State Cleaning (
+				in: isExited
+				out: clean
+			)
+			
+		}
+		RelationDeclaration ResourceUsageCycleRelation(
+			ResourceUsageCycleIsEnteredEvent: clock,
+			ResourceUsageCycleIsExitedByNotPriorityActorEvent: clock,
+			isExited: clock,
+			actorIsSensible: int,
+			ResourceUsageCycleIsProcessedEvent: clock,
+			ResourceUsageCycleIdleEvent: clock,
+			ResourceusageCycleExitOfAndEnterInEvent: clock,
+			ResourceusageCycleCleanEvent: clock
+		)
+	}
+
+}	

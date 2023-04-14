@@ -1,0 +1,86 @@
+AutomataConstraintLibrary actorProcessingCycle {
+	
+	import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as kernel;
+	import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as CCSLLib;
+
+	RelationLibrary ActorProcessingCycleLibrary {
+		
+		AutomataRelationDefinition ActorProcessingCycleRelationDefinition [ActorProcessingCycle] {
+			
+			variables {
+				Integer currentProcessTime = 0
+			}
+			
+			/* 
+			 * TRANSITIONS DEFINITION
+			 */ 
+			
+			init: Start
+			
+			from Start to Ready : starting
+			-> ()
+
+			from Ready to In : enter
+			-> (when ActorProcessingCycleEnterEvent)
+			
+			from Ready to In : takesOver
+			-> (when ActorProcessingCycleTakesOverEvent)
+			
+			from Ready to Ready : idle
+			-> (when ActorProcessingCycleIdleEvent)
+
+			from In to In : process
+			-> (when process if (currentProcessTime < (processTime.value - one)) 
+				do currentProcessTime = (currentProcessTime + one)
+			)
+			
+			from In to Finished : exit
+			-> (when ActorProcessingCycleExitEvent)
+			
+			from In to Ready : isTakenOver
+			-> (when ActorProcessingCycleIsTakenOverEvent)
+			
+			from Finished to Finished : idle
+			-> (when ActorProcessingCycleIdleEvent)
+			
+			from Finished to Ready : ready
+			-> (when ActorProcessingCyclePeriodStartEvent)
+			
+			/* 
+			 * STATES DEFINITION
+			 */ 
+			
+			State Start (
+				out: starting
+			)
+			
+			State Ready (
+				in: starting, ready, idle
+				out: enter, idle, takesOver
+			)
+			
+			State In (
+				in: enter, process, takesOver
+				out: process, isTakenOver, exit
+			)
+			
+			State Finished (
+				in: exit, idle
+				out: idle, ready
+			)
+		
+		}
+		
+		RelationDeclaration ActorProcessingCycle(
+			ActorProcessingCycleEnterEvent: clock,
+			process: clock,
+			processTime: int,
+			ActorProcessingCycleExitEvent: clock,
+			ActorProcessingCycleIdleEvent: clock,
+			ActorProcessingCycleIsTakenOverEvent: clock,
+			ActorProcessingCycleTakesOverEvent: clock,
+			ActorProcessingCyclePeriodStartEvent: clock
+		)
+	}
+
+}

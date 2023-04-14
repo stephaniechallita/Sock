@@ -1,0 +1,17 @@
+IotSystem GenSyst9 {
+	currentTime 0
+	ownedActor {
+		Actor ar00 {
+			isSensible 0
+			processTime 9
+			periodTime 15
+			currentProcessTime 0
+			resource "r0"
+		}
+	}
+	ownedResource {
+		Resource r0 {
+			actor ("ar00")
+		}
+	}
+}

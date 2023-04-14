@@ -1,0 +1,31 @@
+IotSystem GenSyst4 {
+	currentTime 0
+	ownedActor {
+		Actor ar00 {
+			isSensible 0
+			processTime 1
+			periodTime 10
+			currentProcessTime 0
+			resource "r0"
+		},
+		Actor ar02 {
+			isSensible 1
+			processTime 8
+			periodTime 35
+			currentProcessTime 0
+			resource "r0"
+		},
+		Actor ar01 {
+			isSensible 1
+			processTime 3
+			periodTime 45
+			currentProcessTime 0
+			resource "r0"
+		}
+	}
+	ownedResource {
+		Resource r0 {
+			actor ("ar00", "ar01", "ar02")
+		}
+	}
+}
