@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.xdsml">
+    <XDSML_Definition name="fr.inria.kairos.sock.Sock" xdsmlFilePath="/fr.inria.kairos.sock.dsl/Sock.dsl" modelLoader_class="org.eclipse.gemoc.executionframework.extensions.sirius.modelloader.DefaultModelLoader" />
+  </extension>
+  <extension point="org.eclipse.gemoc.gemoc_language_workbench.moccml.xdsml.addition">
+    <MOCCML_XDSML_Addition name="fr.inria.kairos.sock.Sock" referencedXDSMLName="fr.inria.kairos.sock.Sock" codeExecutor_class="sock.xdsml.api.impl.SockCodeExecutor" solver_class="org.eclipse.gemoc.execution.concurrent.ccsljavaengine.extensions.timesquare.moc.impl.CcslSolver" toCCSLQVTOFilePath="/fr.inria.kairos.sock.dsl.dse/qvto-gen/modeling/Sock.qvto" />
+  </extension>
+</plugin>

@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Moccml
+Bundle-SymbolicName: fr.inria.kairos.sock.dsl.moccml
+Bundle-Version: 2.3.0.qualifier

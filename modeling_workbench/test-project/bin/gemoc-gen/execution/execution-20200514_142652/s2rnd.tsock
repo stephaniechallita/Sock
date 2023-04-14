@@ -1,0 +1,24 @@
+IotSystem s2rnd {
+	currentTime 0
+	ownedActor {
+		Actor a0060070 {
+			isSensible 0
+			processTime 2
+			periodTime 10
+			currentProcessTime 0
+			resource "r060070"
+		},
+		Actor a1060070 {
+			isSensible 1
+			processTime 4
+			periodTime 35
+			currentProcessTime 0
+			resource "r060070"
+		}
+	}
+	ownedResource {
+		Resource r060070 {
+			actor ("a0060070", "a1060070")
+		}
+	}
+}

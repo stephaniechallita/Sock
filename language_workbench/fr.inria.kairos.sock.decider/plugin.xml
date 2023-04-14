@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<!--
+    Copyright (c) 2017 INRIA and others.
+    All rights reserved. This program and the accompanying materials
+    are made available under the terms of the Eclipse Public License v1.0
+    which accompanies this distribution, and is available at
+    http://www.eclipse.org/legal/epl-v10.html
+   
+    Contributors:
+        INRIA - initial API and implementation
+        Stephanie Challita stephanie.challita@inria.fr
+ -->
+
+<plugin>
+   <extension point="org.eclipse.gemoc.gemoc_language_workbench.deciders">
+      <DeciderSpecification
+            Class="org.eclipse.gemoc.gemoc_language_workbench.deciders.SockDecider"
+            Icon="icons/user-shield-black-16.png"
+            Name="Sock decider">
+      </DeciderSpecification>
+      <DeciderSpecification
+            Class="org.eclipse.gemoc.gemoc_language_workbench.deciders.RandomSockDecider"
+            Icon="icons/user-shield-black-16.png"
+            Name="Random Sock decider">
+      </DeciderSpecification>
+	</extension>
+</plugin>

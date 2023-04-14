@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="fr.inria.kairos.sock.dsl.design.Activator"
+               id="fr.inria.kairos.sock.dsl.design"
+	       name="sock">
+    </component>
+  </extension>
+</plugin>

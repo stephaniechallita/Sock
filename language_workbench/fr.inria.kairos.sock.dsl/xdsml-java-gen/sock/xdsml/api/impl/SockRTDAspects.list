@@ -1,0 +1,3 @@
+fr.inria.kairos.sock.aspects.IotSystemAspect
+fr.inria.kairos.sock.aspects.ResourceAspect
+fr.inria.kairos.sock.aspects.ActorAspect

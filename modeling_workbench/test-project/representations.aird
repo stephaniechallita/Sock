@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sock="http://kairos.inria.fr/sock" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_bz0fsI-UEeq1eNQf4XJawQ" selectedViews="_eiqEgI-UEeq1eNQf4XJawQ" version="14.1.0.201810161215">
+    <semanticResources>test.sock</semanticResources>
+    <semanticResources>platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib</semanticResources>
+    <semanticResources>DisabledButterFly.tsock</semanticResources>
+    <semanticResources>http://kairos.inria.fr/sock</semanticResources>
+    <semanticResources>platform:/plugin/fr.inria.kairos.sock.dsl.moccml/mocc/actorProcessingCycle.moccml</semanticResources>
+    <semanticResources>platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib</semanticResources>
+    <semanticResources>platform:/plugin/fr.inria.kairos.sock.dsl.moccml/mocc/isSensibleActor.moccml</semanticResources>
+    <semanticResources>platform:/plugin/fr.inria.kairos.sock.dsl.moccml/mocc/resourceUsageCycle.moccml</semanticResources>
+    <semanticResources>http://www.eclipse.org/emf/2002/Ecore</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20200507_215705/EnabledButterFly.tsock</semanticResources>
+    <semanticResources>EnabledButterFly.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s0.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s1.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s0rnd.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s1rnd.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s2.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s3.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s4.tsock</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20200513_180404/s4.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s4rnd.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s3rnd.tsock</semanticResources>
+    <semanticResources>schedule_side_channel_attacks/s2rnd.tsock</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20200514_142652/s2rnd.tsock</semanticResources>
+    <semanticResources>gemoc-gen/s2rnd.timemodel</semanticResources>
+    <semanticResources>gemoc-gen/s2rnd.feedback</semanticResources>
+    <semanticResources>gemoc-gen/s2rnd.prioritymodel</semanticResources>
+    <semanticResources>gemoc-gen/s2rnd.msemodel</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20200514_143302/s3rnd.tsock</semanticResources>
+    <semanticResources>gemoc-gen/s3rnd.timemodel</semanticResources>
+    <semanticResources>gemoc-gen/s3rnd.feedback</semanticResources>
+    <semanticResources>gemoc-gen/s3rnd.prioritymodel</semanticResources>
+    <semanticResources>gemoc-gen/s3rnd.msemodel</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20200514_143923/s4rnd.tsock</semanticResources>
+    <semanticResources>gemoc-gen/s4rnd.timemodel</semanticResources>
+    <semanticResources>gemoc-gen/s4rnd.feedback</semanticResources>
+    <semanticResources>gemoc-gen/s4rnd.prioritymodel</semanticResources>
+    <semanticResources>gemoc-gen/s4rnd.msemodel</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20200517_112827/sockExample.tsock</semanticResources>
+    <semanticResources>gemoc-gen/sockExample.timemodel</semanticResources>
+    <semanticResources>sockExample.tsock</semanticResources>
+    <semanticResources>gemoc-gen/sockExample.feedback</semanticResources>
+    <semanticResources>gemoc-gen/sockExample.prioritymodel</semanticResources>
+    <semanticResources>gemoc-gen/sockExample.msemodel</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20200517_173939/s0.tsock</semanticResources>
+    <semanticResources>gemoc-gen/s0.timemodel</semanticResources>
+    <semanticResources>gemoc-gen/s0.feedback</semanticResources>
+    <semanticResources>gemoc-gen/s0.prioritymodel</semanticResources>
+    <semanticResources>gemoc-gen/s0.msemodel</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20200517_174217/s0.tsock</semanticResources>
+    <ownedViews xmi:type="viewpoint:DView" uid="_eiqEgI-UEeq1eNQf4XJawQ">
+      <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fV77kI-UEeq1eNQf4XJawQ" name="test Sock Diagram" repPath="#_fS7D0I-UEeq1eNQf4XJawQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']"/>
+        <target xmi:type="sock:IotSystem" href="test.sock#/"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_r63OYI_ZEeqJwPyB4ntppQ" name="new Sock Diagram" repPath="#_r6nWwI_ZEeqJwPyB4ntppQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']"/>
+        <target xmi:type="sock:IotSystem" href="test.sock#/"/>
+      </ownedRepresentationDescriptors>
+    </ownedViews>
+  </viewpoint:DAnalysis>
+  <diagram:DSemanticDiagram uid="_fS7D0I-UEeq1eNQf4XJawQ" name="test Sock Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_fVyKkI-UEeq1eNQf4XJawQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_fVz_wI-UEeq1eNQf4XJawQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_fW5k4I-UEeq1eNQf4XJawQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_fW5k4Y-UEeq1eNQf4XJawQ" type="Sirius" element="_fS7D0I-UEeq1eNQf4XJawQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_fXPjII-UEeq1eNQf4XJawQ" type="2002" element="_fTpckI-UEeq1eNQf4XJawQ">
+          <children xmi:type="notation:Node" xmi:id="_fXZUII-UEeq1eNQf4XJawQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_fXbwYI-UEeq1eNQf4XJawQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_fXbwYY-UEeq1eNQf4XJawQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_fXbwYo-UEeq1eNQf4XJawQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fXPjIY-UEeq1eNQf4XJawQ" fontName=".SF NS Text" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fXPjIo-UEeq1eNQf4XJawQ" x="224" y="148"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fXjsMI-UEeq1eNQf4XJawQ" type="2002" element="_fVkvMI-UEeq1eNQf4XJawQ">
+          <children xmi:type="notation:Node" xmi:id="_fXjsM4-UEeq1eNQf4XJawQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_fXkTQI-UEeq1eNQf4XJawQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_fXkTQY-UEeq1eNQf4XJawQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_fXkTQo-UEeq1eNQf4XJawQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fXjsMY-UEeq1eNQf4XJawQ" fontName=".SF NS Text" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fXjsMo-UEeq1eNQf4XJawQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_fXkTQ4-UEeq1eNQf4XJawQ" type="2002" element="_fVl9Uo-UEeq1eNQf4XJawQ">
+          <children xmi:type="notation:Node" xmi:id="_fXk6UI-UEeq1eNQf4XJawQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_fXk6UY-UEeq1eNQf4XJawQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_fXk6Uo-UEeq1eNQf4XJawQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_fXk6U4-UEeq1eNQf4XJawQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_fXkTRI-UEeq1eNQf4XJawQ" fontName=".SF NS Text" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fXkTRY-UEeq1eNQf4XJawQ" x="456"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_fW5k4o-UEeq1eNQf4XJawQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_fX6RgI-UEeq1eNQf4XJawQ" type="4001" element="_fVsD8I-UEeq1eNQf4XJawQ" source="_fXPjII-UEeq1eNQf4XJawQ" target="_fXkTQ4-UEeq1eNQf4XJawQ">
+          <children xmi:type="notation:Node" xmi:id="_fX7foI-UEeq1eNQf4XJawQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fX7foY-UEeq1eNQf4XJawQ" x="29" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fX974I-UEeq1eNQf4XJawQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fX974Y-UEeq1eNQf4XJawQ" x="-23" y="-1"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fX974o-UEeq1eNQf4XJawQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fX9744-UEeq1eNQf4XJawQ" x="-26" y="-1"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fX6RgY-UEeq1eNQf4XJawQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fX6Rgo-UEeq1eNQf4XJawQ" fontName=".SF NS Text" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fX6Rg4-UEeq1eNQf4XJawQ" points="[0, 0, -232, 80]$[232, -80, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fYSE8I-UEeq1eNQf4XJawQ" id="(0.5067567567567568,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fYSE8Y-UEeq1eNQf4XJawQ" id="(0.5067567567567568,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fYSsAI-UEeq1eNQf4XJawQ" type="4001" element="_fVvuUI-UEeq1eNQf4XJawQ" source="_fXPjII-UEeq1eNQf4XJawQ" target="_fXjsMI-UEeq1eNQf4XJawQ">
+          <children xmi:type="notation:Node" xmi:id="_fYT6II-UEeq1eNQf4XJawQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYT6IY-UEeq1eNQf4XJawQ" x="7" y="7"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fYT6Io-UEeq1eNQf4XJawQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYT6I4-UEeq1eNQf4XJawQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fYT6JI-UEeq1eNQf4XJawQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYT6JY-UEeq1eNQf4XJawQ" x="-7" y="-7"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fYSsAY-UEeq1eNQf4XJawQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fYSsAo-UEeq1eNQf4XJawQ" fontName=".SF NS Text" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fYSsA4-UEeq1eNQf4XJawQ" points="[-75, 0, 149, 80]$[-152, 0, 72, 80]$[-224, -80, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fYUhMI-UEeq1eNQf4XJawQ" id="(0.5067567567567568,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fYUhMY-UEeq1eNQf4XJawQ" id="(0.5067567567567568,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fYUhMo-UEeq1eNQf4XJawQ" type="4001" element="_fVvuVY-UEeq1eNQf4XJawQ" source="_fXjsMI-UEeq1eNQf4XJawQ" target="_fXPjII-UEeq1eNQf4XJawQ">
+          <children xmi:type="notation:Node" xmi:id="_fYVIQI-UEeq1eNQf4XJawQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYVIQY-UEeq1eNQf4XJawQ" x="-15" y="-13"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fYVIQo-UEeq1eNQf4XJawQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYVIQ4-UEeq1eNQf4XJawQ" x="4" y="9"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fYVIRI-UEeq1eNQf4XJawQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYVIRY-UEeq1eNQf4XJawQ" x="-1" y="8"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fYUhM4-UEeq1eNQf4XJawQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fYUhNI-UEeq1eNQf4XJawQ" fontName=".SF NS Text" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fYUhNY-UEeq1eNQf4XJawQ" points="[73, -11, -151, -91]$[133, -20, -91, -100]$[133, 17, -91, -63]$[224, 80, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fYVvUI-UEeq1eNQf4XJawQ" id="(0.5067567567567568,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fYVvUY-UEeq1eNQf4XJawQ" id="(0.5067567567567568,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_fYVvUo-UEeq1eNQf4XJawQ" type="4001" element="_fVwVYo-UEeq1eNQf4XJawQ" source="_fXkTQ4-UEeq1eNQf4XJawQ" target="_fXPjII-UEeq1eNQf4XJawQ">
+          <children xmi:type="notation:Node" xmi:id="_fYVvVo-UEeq1eNQf4XJawQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYVvV4-UEeq1eNQf4XJawQ" x="48" y="-8"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fYWWYI-UEeq1eNQf4XJawQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYWWYY-UEeq1eNQf4XJawQ" x="13" y="11"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_fYWWYo-UEeq1eNQf4XJawQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fYWWY4-UEeq1eNQf4XJawQ" x="-1" y="2"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_fYVvU4-UEeq1eNQf4XJawQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_fYVvVI-UEeq1eNQf4XJawQ" fontName=".SF NS Text" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fYVvVY-UEeq1eNQf4XJawQ" points="[0, 0, 232, -80]$[-160, 20, 72, -60]$[-232, 80, 0, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fYWWZI-UEeq1eNQf4XJawQ" id="(0.5067567567567568,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fYWWZY-UEeq1eNQf4XJawQ" id="(0.5067567567567568,0.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_fTpckI-UEeq1eNQf4XJawQ" name="r : Resource" outgoingEdges="_fVsD8I-UEeq1eNQf4XJawQ _fVvuUI-UEeq1eNQf4XJawQ" incomingEdges="_fVvuVY-UEeq1eNQf4XJawQ _fVwVYo-UEeq1eNQf4XJawQ">
+      <target xmi:type="sock:Resource" href="test.sock#//@ownedResource.0"/>
+      <semanticElements xmi:type="sock:Resource" href="test.sock#//@ownedResource.0"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_fVdacI-UEeq1eNQf4XJawQ" foregroundColor="114,159,207">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ResourceContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ResourceContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_fVkvMI-UEeq1eNQf4XJawQ" name="a" outgoingEdges="_fVvuVY-UEeq1eNQf4XJawQ" incomingEdges="_fVvuUI-UEeq1eNQf4XJawQ">
+      <target xmi:type="sock:Actor" href="test.sock#//@ownedActor.0"/>
+      <semanticElements xmi:type="sock:Actor" href="test.sock#//@ownedActor.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_fVl9UI-UEeq1eNQf4XJawQ" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="138,226,52">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ActorContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ActorContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_fVl9Uo-UEeq1eNQf4XJawQ" name="b" outgoingEdges="_fVwVYo-UEeq1eNQf4XJawQ" incomingEdges="_fVsD8I-UEeq1eNQf4XJawQ">
+      <target xmi:type="sock:Actor" href="test.sock#//@ownedActor.1"/>
+      <semanticElements xmi:type="sock:Actor" href="test.sock#//@ownedActor.1"/>
+      <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
+      <arrangeConstraints>KEEP_SIZE</arrangeConstraints>
+      <arrangeConstraints>KEEP_RATIO</arrangeConstraints>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_fVl9U4-UEeq1eNQf4XJawQ" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="138,226,52">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ActorContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ActorContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fVsD8I-UEeq1eNQf4XJawQ" name="actor" sourceNode="_fTpckI-UEeq1eNQf4XJawQ" targetNode="_fVl9Uo-UEeq1eNQf4XJawQ">
+      <target xmi:type="sock:Resource" href="test.sock#//@ownedResource.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fVt5II-UEeq1eNQf4XJawQ">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Resource_actorEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fVugMI-UEeq1eNQf4XJawQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Resource_actorEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fVvuUI-UEeq1eNQf4XJawQ" name="actor" sourceNode="_fTpckI-UEeq1eNQf4XJawQ" targetNode="_fVkvMI-UEeq1eNQf4XJawQ">
+      <target xmi:type="sock:Resource" href="test.sock#//@ownedResource.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fVvuUY-UEeq1eNQf4XJawQ">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Resource_actorEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fVvuUo-UEeq1eNQf4XJawQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Resource_actorEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fVvuVY-UEeq1eNQf4XJawQ" name="resource" sourceNode="_fVkvMI-UEeq1eNQf4XJawQ" targetNode="_fTpckI-UEeq1eNQf4XJawQ">
+      <target xmi:type="sock:Actor" href="test.sock#//@ownedActor.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fVvuVo-UEeq1eNQf4XJawQ">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Actor_resourceEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fVvuV4-UEeq1eNQf4XJawQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Actor_resourceEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_fVwVYo-UEeq1eNQf4XJawQ" name="resource" sourceNode="_fVl9Uo-UEeq1eNQf4XJawQ" targetNode="_fTpckI-UEeq1eNQf4XJawQ">
+      <target xmi:type="sock:Actor" href="test.sock#//@ownedActor.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_fVwVY4-UEeq1eNQf4XJawQ">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Actor_resourceEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_fVwVZI-UEeq1eNQf4XJawQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Actor_resourceEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_fTMwoI-UEeq1eNQf4XJawQ"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer"/>
+    <target xmi:type="sock:IotSystem" href="test.sock#/"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram uid="_r6nWwI_ZEeqJwPyB4ntppQ" name="new Sock Diagram">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_r6v5oI_ZEeqJwPyB4ntppQ" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_r6v5oY_ZEeqJwPyB4ntppQ"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_r7C0kI_ZEeqJwPyB4ntppQ" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_r7C0kY_ZEeqJwPyB4ntppQ" type="Sirius" element="_r6nWwI_ZEeqJwPyB4ntppQ" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_r7FQ0I_ZEeqJwPyB4ntppQ" type="2002" element="_r6pzAI_ZEeqJwPyB4ntppQ">
+          <children xmi:type="notation:Node" xmi:id="_r7KJUI_ZEeqJwPyB4ntppQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_r7LXcI_ZEeqJwPyB4ntppQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_r7LXcY_ZEeqJwPyB4ntppQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_r7LXco_ZEeqJwPyB4ntppQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_r7F34I_ZEeqJwPyB4ntppQ" fontName=".SF NS Text" fontHeight="8"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7F34Y_ZEeqJwPyB4ntppQ" x="104" y="128"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_r7L-gI_ZEeqJwPyB4ntppQ" type="2002" element="_r6s2UI_ZEeqJwPyB4ntppQ">
+          <children xmi:type="notation:Node" xmi:id="_r7L-g4_ZEeqJwPyB4ntppQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_r7L-hI_ZEeqJwPyB4ntppQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_r7L-hY_ZEeqJwPyB4ntppQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_r7L-ho_ZEeqJwPyB4ntppQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_r7L-gY_ZEeqJwPyB4ntppQ" fontName=".SF NS Text" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7L-go_ZEeqJwPyB4ntppQ"/>
+        </children>
+        <children xmi:type="notation:Node" xmi:id="_r7MlkI_ZEeqJwPyB4ntppQ" type="2002" element="_r6tdYY_ZEeqJwPyB4ntppQ">
+          <children xmi:type="notation:Node" xmi:id="_r7Mlk4_ZEeqJwPyB4ntppQ" type="5006"/>
+          <children xmi:type="notation:Node" xmi:id="_r7MllI_ZEeqJwPyB4ntppQ" type="7001">
+            <styles xmi:type="notation:SortingStyle" xmi:id="_r7MllY_ZEeqJwPyB4ntppQ"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_r7Mllo_ZEeqJwPyB4ntppQ"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_r7MlkY_ZEeqJwPyB4ntppQ" fontName=".SF NS Text" fontHeight="12"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7Mlko_ZEeqJwPyB4ntppQ" x="208"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_r7C0ko_ZEeqJwPyB4ntppQ"/>
+        <edges xmi:type="notation:Edge" xmi:id="_r7OawI_ZEeqJwPyB4ntppQ" type="4001" element="_r6uEcI_ZEeqJwPyB4ntppQ" source="_r7FQ0I_ZEeqJwPyB4ntppQ" target="_r7MlkI_ZEeqJwPyB4ntppQ">
+          <children xmi:type="notation:Node" xmi:id="_r7QP8I_ZEeqJwPyB4ntppQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7QP8Y_ZEeqJwPyB4ntppQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r7ReEI_ZEeqJwPyB4ntppQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7ReEY_ZEeqJwPyB4ntppQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r7SFII_ZEeqJwPyB4ntppQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7SFIY_ZEeqJwPyB4ntppQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_r7OawY_ZEeqJwPyB4ntppQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_r7Oawo_ZEeqJwPyB4ntppQ" fontName=".SF NS Text" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r7Oaw4_ZEeqJwPyB4ntppQ" points="[-1, 0, -106, 60]$[104, -60, -1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r7Yy0I_ZEeqJwPyB4ntppQ" id="(0.5067567567567568,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r7Yy0Y_ZEeqJwPyB4ntppQ" id="(0.5067567567567568,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_r7ZZ4I_ZEeqJwPyB4ntppQ" type="4001" element="_r6urgI_ZEeqJwPyB4ntppQ" source="_r7FQ0I_ZEeqJwPyB4ntppQ" target="_r7L-gI_ZEeqJwPyB4ntppQ">
+          <children xmi:type="notation:Node" xmi:id="_r7ZZ5I_ZEeqJwPyB4ntppQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7ZZ5Y_ZEeqJwPyB4ntppQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r7ZZ5o_ZEeqJwPyB4ntppQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7ZZ54_ZEeqJwPyB4ntppQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r7aA8I_ZEeqJwPyB4ntppQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7aA8Y_ZEeqJwPyB4ntppQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_r7ZZ4Y_ZEeqJwPyB4ntppQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_r7ZZ4o_ZEeqJwPyB4ntppQ" fontName=".SF NS Text" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r7ZZ44_ZEeqJwPyB4ntppQ" points="[-1, 0, 104, 60]$[-106, -60, -1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r7aoAI_ZEeqJwPyB4ntppQ" id="(0.5067567567567568,0.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r7aoAY_ZEeqJwPyB4ntppQ" id="(0.5067567567567568,1.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_r7aoAo_ZEeqJwPyB4ntppQ" type="4001" element="_r6vSkI_ZEeqJwPyB4ntppQ" source="_r7L-gI_ZEeqJwPyB4ntppQ" target="_r7FQ0I_ZEeqJwPyB4ntppQ">
+          <children xmi:type="notation:Node" xmi:id="_r7aoBo_ZEeqJwPyB4ntppQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7aoB4_ZEeqJwPyB4ntppQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r7bPEI_ZEeqJwPyB4ntppQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7bPEY_ZEeqJwPyB4ntppQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r7bPEo_ZEeqJwPyB4ntppQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7bPE4_ZEeqJwPyB4ntppQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_r7aoA4_ZEeqJwPyB4ntppQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_r7aoBI_ZEeqJwPyB4ntppQ" fontName=".SF NS Text" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r7aoBY_ZEeqJwPyB4ntppQ" points="[-1, 0, -106, -60]$[104, 60, -1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r7b2II_ZEeqJwPyB4ntppQ" id="(0.5067567567567568,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r7b2IY_ZEeqJwPyB4ntppQ" id="(0.5067567567567568,0.0)"/>
+        </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_r7b2Io_ZEeqJwPyB4ntppQ" type="4001" element="_r6vSlY_ZEeqJwPyB4ntppQ" source="_r7MlkI_ZEeqJwPyB4ntppQ" target="_r7FQ0I_ZEeqJwPyB4ntppQ">
+          <children xmi:type="notation:Node" xmi:id="_r7cdMI_ZEeqJwPyB4ntppQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7cdMY_ZEeqJwPyB4ntppQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r7cdMo_ZEeqJwPyB4ntppQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7cdM4_ZEeqJwPyB4ntppQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_r7cdNI_ZEeqJwPyB4ntppQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_r7cdNY_ZEeqJwPyB4ntppQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_r7b2I4_ZEeqJwPyB4ntppQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_r7b2JI_ZEeqJwPyB4ntppQ" fontName=".SF NS Text" fontHeight="8"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_r7b2JY_ZEeqJwPyB4ntppQ" points="[-1, 0, 104, -60]$[-106, 60, -1, 0]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r7cdNo_ZEeqJwPyB4ntppQ" id="(0.5067567567567568,1.0)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_r7cdN4_ZEeqJwPyB4ntppQ" id="(0.5067567567567568,0.0)"/>
+        </edges>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_r6pzAI_ZEeqJwPyB4ntppQ" name="r : Resource" outgoingEdges="_r6uEcI_ZEeqJwPyB4ntppQ _r6urgI_ZEeqJwPyB4ntppQ" incomingEdges="_r6vSkI_ZEeqJwPyB4ntppQ _r6vSlY_ZEeqJwPyB4ntppQ">
+      <target xmi:type="sock:Resource" href="test.sock#//@ownedResource.0"/>
+      <semanticElements xmi:type="sock:Resource" href="test.sock#//@ownedResource.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_r6roMI_ZEeqJwPyB4ntppQ" foregroundColor="114,159,207">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ResourceContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ResourceContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_r6s2UI_ZEeqJwPyB4ntppQ" name="a" outgoingEdges="_r6vSkI_ZEeqJwPyB4ntppQ" incomingEdges="_r6urgI_ZEeqJwPyB4ntppQ">
+      <target xmi:type="sock:Actor" href="test.sock#//@ownedActor.0"/>
+      <semanticElements xmi:type="sock:Actor" href="test.sock#//@ownedActor.0"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_r6s2UY_ZEeqJwPyB4ntppQ" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="138,226,52">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ActorContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ActorContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DNodeContainer" uid="_r6tdYY_ZEeqJwPyB4ntppQ" name="b" outgoingEdges="_r6vSlY_ZEeqJwPyB4ntppQ" incomingEdges="_r6uEcI_ZEeqJwPyB4ntppQ">
+      <target xmi:type="sock:Actor" href="test.sock#//@ownedActor.1"/>
+      <semanticElements xmi:type="sock:Actor" href="test.sock#//@ownedActor.1"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" uid="_r6tdYo_ZEeqJwPyB4ntppQ" labelSize="12" borderSize="1" borderSizeComputationExpression="1" backgroundStyle="GradientTopToBottom" foregroundColor="138,226,52">
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ActorContainer']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@containerMappings[name='ActorContainer']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_r6uEcI_ZEeqJwPyB4ntppQ" name="actor" sourceNode="_r6pzAI_ZEeqJwPyB4ntppQ" targetNode="_r6tdYY_ZEeqJwPyB4ntppQ">
+      <target xmi:type="sock:Resource" href="test.sock#//@ownedResource.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_r6uEcY_ZEeqJwPyB4ntppQ">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Resource_actorEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_r6uEco_ZEeqJwPyB4ntppQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Resource_actorEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_r6urgI_ZEeqJwPyB4ntppQ" name="actor" sourceNode="_r6pzAI_ZEeqJwPyB4ntppQ" targetNode="_r6s2UI_ZEeqJwPyB4ntppQ">
+      <target xmi:type="sock:Resource" href="test.sock#//@ownedResource.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_r6urgY_ZEeqJwPyB4ntppQ">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Resource_actorEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_r6urgo_ZEeqJwPyB4ntppQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Resource_actorEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_r6vSkI_ZEeqJwPyB4ntppQ" name="resource" sourceNode="_r6s2UI_ZEeqJwPyB4ntppQ" targetNode="_r6pzAI_ZEeqJwPyB4ntppQ">
+      <target xmi:type="sock:Actor" href="test.sock#//@ownedActor.0"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_r6vSkY_ZEeqJwPyB4ntppQ">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Actor_resourceEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_r6vSko_ZEeqJwPyB4ntppQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Actor_resourceEdge']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" uid="_r6vSlY_ZEeqJwPyB4ntppQ" name="resource" sourceNode="_r6tdYY_ZEeqJwPyB4ntppQ" targetNode="_r6pzAI_ZEeqJwPyB4ntppQ">
+      <target xmi:type="sock:Actor" href="test.sock#//@ownedActor.1"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" uid="_r6vSlo_ZEeqJwPyB4ntppQ">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Actor_resourceEdge']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" uid="_r6vSl4_ZEeqJwPyB4ntppQ" showIcon="false"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer/@edgeMappings[name='Actor_resourceEdge']"/>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" uid="_r6n90I_ZEeqJwPyB4ntppQ"/>
+    <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer"/>
+    <target xmi:type="sock:IotSystem" href="test.sock#/"/>
+  </diagram:DSemanticDiagram>
+</xmi:XMI>

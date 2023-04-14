@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated sock -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="fr.inria.kairos.sock.dsl.model.sock.presentation.SockModelWizardID"
+            name="%_UI_SockModelWizard_label"
+            class="fr.inria.kairos.sock.dsl.model.sock.presentation.SockModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/SockModelFile.gif">
+         <description>%_UI_SockModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated sock -->
+      <editor
+            id="fr.inria.kairos.sock.dsl.model.sock.presentation.SockEditorID"
+            name="%_UI_SockEditor_label"
+            icon="icons/full/obj16/SockModelFile.gif"
+            extensions="sock"
+            class="fr.inria.kairos.sock.dsl.model.sock.presentation.SockEditor"
+            contributorClass="fr.inria.kairos.sock.dsl.model.sock.presentation.SockActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

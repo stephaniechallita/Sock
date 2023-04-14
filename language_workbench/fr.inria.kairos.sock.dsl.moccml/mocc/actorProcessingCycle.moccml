@@ -1,0 +1,96 @@
+AutomataConstraintLibrary actorProcessingCycle {
+	
+	import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as kernel;
+	import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as CCSLLib;
+
+	RelationLibrary ActorProcessingCycleLibrary {
+		
+		AutomataRelationDefinition ActorProcessingCycleRelationDefinition [ActorProcessingCycle] {
+			
+			variables {
+				Integer currentProcessTimeValue = 0
+			}
+			
+			/* 
+			 * TRANSITIONS DEFINITION
+			 */ 
+			
+			init: Start
+			
+			from Start to Ready : starting
+			-> ()
+
+			from Ready to Entered : enter
+			-> (when ActorProcessingCycleEnterEvent)
+			
+			from Ready to Entered : takesOver
+			-> (when ActorProcessingCycleTakesOverEvent)
+			
+			from Ready to Ready : idleReady
+			-> (when ActorProcessingCycleIdleEvent)
+			
+			from Ready to Exited : butterflyAttack
+			-> (when ActorProcessingCycleButterflyAttackEvent) 
+			
+			from Entered to Entered : process
+			-> (when ActorProcessingCycleProcessEvent if (currentProcessTimeValue < (ActorProcessingCycleProcessTimeValue.value - one)) do currentProcessTimeValue = (currentProcessTimeValue + one))
+			
+			from Entered to Finished : lastProcess
+			-> (when ActorProcessingCycleProcessEvent if (currentProcessTimeValue == (ActorProcessingCycleProcessTimeValue.value - one)) do currentProcessTimeValue = zero)
+			
+			from Finished to Exited : exit
+			-> (when ActorProcessingCycleExitEvent)
+			
+			from Entered to Ready : isTakenOver
+			-> (when ActorProcessingCycleIsTakenOverEvent)
+			
+			from Exited to Exited : idleExited
+			-> (when ActorProcessingCycleIdleEvent)
+			
+			from Exited to Ready : ready
+			-> (when ActorProcessingCyclePeriodStartEvent)
+			
+			/* 
+			 * STATES DEFINITION
+			 */ 
+			
+			State Start (
+				out: starting
+			)
+			
+			State Ready (
+				in: starting, ready, idleReady
+				out: enter, idleReady, takesOver, butterflyAttack
+			)
+			
+			State Entered (
+				in: enter, process, takesOver
+				out: process, lastProcess, isTakenOver
+			)
+			
+			State Finished(
+				in: lastProcess
+				out: exit
+			)
+			
+			State Exited (
+				in: exit, idleExited, butterflyAttack
+				out: idleExited, ready
+			)
+		
+		}
+		
+		RelationDeclaration ActorProcessingCycle(
+			ActorProcessingCycleEnterEvent: clock,
+			ActorProcessingCycleProcessEvent: clock,
+			ActorProcessingCycleProcessTimeValue: int,
+			ActorProcessingCycleExitEvent: clock,
+			ActorProcessingCycleIdleEvent: clock,
+			ActorProcessingCycleIsTakenOverEvent: clock,
+			ActorProcessingCycleTakesOverEvent: clock,
+			ActorProcessingCyclePeriodStartEvent: clock,
+			ActorProcessingCycleButterflyAttackEvent: clock
+		)
+	}
+
+}	

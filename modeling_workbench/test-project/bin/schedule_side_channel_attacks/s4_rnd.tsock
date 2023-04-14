@@ -1,0 +1,45 @@
+IotSystem s4 {
+	currentTime 0
+	ownedActor {
+		Actor a0060070 {
+			isSensible 0
+			processTime 3
+			periodTime 75
+			currentProcessTime 0
+			resource "r060070"
+		},
+		Actor a1060070 {
+			isSensible 1
+			processTime 7
+			periodTime 50
+			currentProcessTime 0
+			resource "r060070"
+		},
+		Actor a2060070 {
+			isSensible 0
+			processTime 7
+			periodTime 75
+			currentProcessTime 0
+			resource "r060070"
+		},
+		Actor a3060070 {
+			isSensible 0
+			processTime 6
+			periodTime 95
+			currentProcessTime 0
+			resource "r060070"
+		},
+		Actor a4060070 {
+			isSensible 0
+			processTime 8
+			periodTime 45
+			currentProcessTime 0
+			resource "r060070"
+		}
+	}
+	ownedResource {
+		Resource r060070 {
+			actor ("a0060070", "a1060070", "a2060070", "a3060070", "a4060070")
+		}
+	}
+}

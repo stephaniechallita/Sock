@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: fr.inria.kairos.sock.dsl.model;singleton:=true
+Automatic-Module-Name: fr.inria.kairos.sock.dsl.model
+Bundle-Version: 2.3.0.qualifier
+Bundle-ClassPath: .
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Export-Package: fr.inria.kairos.sock.dsl.model.sock,
+ fr.inria.kairos.sock.dsl.model.sock.impl,
+ fr.inria.kairos.sock.dsl.model.sock.util
+Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
+ org.eclipse.core.runtime
+Bundle-ActivationPolicy: lazy

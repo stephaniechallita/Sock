@@ -1,0 +1,47 @@
+AutomataConstraintLibrary isSensibleActor {
+	
+	import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib" as kernel;
+	import "platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/CCSL.ccslLib" as CCSLLib;
+
+	RelationLibrary isSensibleActorLibrary {
+		
+		AutomataRelationDefinition IsSensibleActorRelationDefinition [IsSensibleActorRelation] {
+			
+			/* 
+			 * TRANSITIONS DEFINITION
+			 */ 
+			
+			init: Start
+			
+			from Start to Check : starting
+			-> ()
+			
+			from Check to Check : isNotSensible
+			-> (when isSensibleActorIsNotSensibleEvent if (isSensibleActorSensibleValue.value == zero))
+			
+			from Check to Check : isSensible
+			-> (when isSensibleActorIsSensibleEvent if (isSensibleActorSensibleValue.value == one))
+			
+			/* 
+			 * STATES DEFINITION
+			 */ 
+			
+			State Start (
+				out: starting
+			)
+			
+			State Check (
+				in: starting, isNotSensible, isSensible
+				out: isNotSensible, isSensible
+			)
+		
+		}
+		
+		RelationDeclaration IsSensibleActorRelation(
+			isSensibleActorIsSensibleEvent: clock,
+			isSensibleActorIsNotSensibleEvent: clock,
+			isSensibleActorSensibleValue: int
+		)
+	}
+
+}	
