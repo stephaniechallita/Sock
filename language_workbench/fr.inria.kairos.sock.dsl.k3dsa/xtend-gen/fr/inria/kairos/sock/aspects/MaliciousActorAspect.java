@@ -2,9 +2,6 @@ package fr.inria.kairos.sock.aspects;
 
 import com.google.common.base.Objects;
 import fr.inria.diverse.k3.al.annotationprocessor.Aspect;
-import fr.inria.kairos.sock.aspects.ActorAspect;
-import fr.inria.kairos.sock.aspects.MaliciousActorAspectMaliciousActorAspectProperties;
-import fr.inria.kairos.sock.aspects.ResourceAspect;
 import fr.inria.kairos.sock.dsl.model.sock.MaliciousActor;
 import org.eclipse.xtext.xbase.lib.InputOutput;
 
@@ -18,7 +15,7 @@ public class MaliciousActorAspect extends ActorAspect {
     	fr.inria.kairos.sock.aspects.MaliciousActorAspect._privk3_stealSensibleInformationFromResource(_self_, (fr.inria.kairos.sock.dsl.model.sock.MaliciousActor)_self);
     };
   }
-  
+
   protected static void _privk3_stealSensibleInformationFromResource(final MaliciousActorAspectMaliciousActorAspectProperties _self_, final MaliciousActor _self) {
     Integer _lastActorSensibility = ResourceAspect.lastActorSensibility(_self.getResource());
     boolean _equals = ((_lastActorSensibility).intValue() == 1);
