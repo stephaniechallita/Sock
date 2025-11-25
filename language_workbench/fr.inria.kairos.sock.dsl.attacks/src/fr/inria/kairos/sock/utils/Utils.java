@@ -14,14 +14,17 @@ import fr.inria.kairos.sock.dsl.model.sock.Actor;
 
 public class Utils {
 	
+	/**
+	 * Looks into the first project of the workspace for a sock.properties file
+	 * @return Properties
+	 */
 	public static Properties getSockProperties() {
-		final String relativePathToSockProperties = ResourcesPlugin.getWorkspace().getRoot().getProjects()[0]
-				.getFile(IOUtils.PATH_PROPERTIES).getFullPath().toFile().getAbsolutePath();
-		final String absolutePath = ResourcesPlugin.getWorkspace().getRoot().getLocation().toOSString();
-		System.out.println(IOUtils.readFile(absolutePath + "/" + relativePathToSockProperties));
+		final String absolutePathToSockProperties = ResourcesPlugin.getWorkspace().getRoot().getProjects()[0]
+				.getFile(IOUtils.PATH_PROPERTIES).getLocation().toOSString();
+		System.out.println(IOUtils.readFile(absolutePathToSockProperties));
 		Properties sockProperties = new Properties();
 		try {
-			sockProperties.load(new FileReader(absolutePath + "/" + relativePathToSockProperties));
+			sockProperties.load(new FileReader(absolutePathToSockProperties));
 			return sockProperties;
 		} catch (Exception e) {
 			throw new RuntimeException(e);
