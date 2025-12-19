@@ -1,0 +1,51 @@
+IotSystem arinc653 {
+	currentTime 0
+	ownedActor {
+		Actor ComputeAttitude {
+			isSensible 1
+			processTime 5
+			periodTime 20
+			currentProcessTime 0
+			resource "SPSensors"
+		},
+		Actor ComputeStability {
+			isSensible 1
+			processTime 7
+			periodTime 40
+			currentProcessTime 0
+			resource "SPSensors"
+		},
+		Actor FlightDataLogger {
+			isSensible 0
+			processTime 8
+			periodTime 200
+			currentProcessTime 0
+			resource "LogBuffer"
+		},
+		Actor NavUpdate {
+			isSensible 0
+			processTime 6
+			periodTime 100
+			currentProcessTime 0
+			resource "BBFusedData"
+		},
+		Actor SensorFusion {
+			isSensible 1
+			processTime 10
+			periodTime 50
+			currentProcessTime 0
+			resource "BBFusedData"
+		}
+	}
+	ownedResource {
+		Resource BBFusedData {
+			actor ("SensorFusion", "NavUpdate")
+		},
+		Resource LogBuffer {
+			actor ("FlightDataLogger")
+		},
+		Resource SPSensors {
+			actor ("ComputeAttitude", "ComputeStability")
+		}
+	}
+}
