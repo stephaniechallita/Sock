@@ -1,0 +1,22 @@
+@startuml
+skinparam state {
+  BackgroundColor #F8F8F8
+  BorderColor #333
+}
+hide empty description
+
+[*] -right-> Free : start
+
+Free --> Free : idle
+Free -down-> Allocated : isAllocated
+
+Cleaning -left-> Free : clean
+
+Allocated -down-> Allocated : actorsSwap
+Allocated -down->  Allocated : isProcessed
+Allocated -up-> Free : isFreed
+Allocated --> Cleaning : isFreedForClean
+Allocated : actorsSwap [!actor.isSensible]
+Allocated : isFreedForClean [actor.isSensible]
+
+@enduml
