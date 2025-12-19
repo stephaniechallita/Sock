@@ -1,0 +1,24 @@
+@startuml
+skinparam state {
+  BackgroundColor #F8F8F8
+  BorderColor #333
+}
+hide empty description
+
+[*] --> Ready : start
+
+Ready --> Ready : idle
+Ready --> Processing : allocate
+Ready --> Processing : takeOver
+
+Processing --> Ready : isTakenOver
+Processing --> Processing : process
+Processing --> Finished : free
+Processing : current < processTime  → process
+Processing : current == processTime → free
+
+Finished --> Finished : idle
+Finished --> Ready : ready
+Finished : when a new period starts → ready
+
+@enduml
