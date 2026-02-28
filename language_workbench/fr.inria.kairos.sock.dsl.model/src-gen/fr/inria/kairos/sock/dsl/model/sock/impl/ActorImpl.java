@@ -171,6 +171,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Resource getResource() {
 		if (resource != null && resource.eIsProxy()) {
 			InternalEObject oldResource = (InternalEObject) resource;
@@ -217,6 +218,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setResource(Resource newResource) {
 		if (newResource != resource) {
 			NotificationChain msgs = null;
@@ -239,6 +241,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getIsSensible() {
 		return isSensible;
 	}
@@ -248,6 +251,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setIsSensible(int newIsSensible) {
 		int oldIsSensible = isSensible;
 		isSensible = newIsSensible;
@@ -261,6 +265,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getProcessTime() {
 		return processTime;
 	}
@@ -270,6 +275,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setProcessTime(int newProcessTime) {
 		int oldProcessTime = processTime;
 		processTime = newProcessTime;
@@ -283,6 +289,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getPeriodTime() {
 		return periodTime;
 	}
@@ -292,6 +299,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setPeriodTime(int newPeriodTime) {
 		int oldPeriodTime = periodTime;
 		periodTime = newPeriodTime;
@@ -305,6 +313,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCurrentProcessTime() {
 		return currentProcessTime;
 	}
@@ -314,6 +323,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCurrentProcessTime(int newCurrentProcessTime) {
 		int oldCurrentProcessTime = currentProcessTime;
 		currentProcessTime = newCurrentProcessTime;
@@ -327,6 +337,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public String getCode() {
 		return code;
 	}
@@ -336,6 +347,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCode(String newCode) {
 		String oldCode = code;
 		code = newCode;
@@ -348,6 +360,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void ready() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -359,6 +372,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void enterIn() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -370,6 +384,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void process() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -381,6 +396,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void exitOf() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -392,6 +408,7 @@ public class ActorImpl extends NamedElementImpl implements Actor {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void idle() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT

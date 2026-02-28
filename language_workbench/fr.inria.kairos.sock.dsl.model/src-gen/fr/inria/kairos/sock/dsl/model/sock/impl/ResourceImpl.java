@@ -68,6 +68,7 @@ public class ResourceImpl extends NamedElementImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Actor> getActor() {
 		if (actor == null) {
 			actor = new EObjectWithInverseResolvingEList<Actor>(Actor.class, this, SockPackage.RESOURCE__ACTOR,
@@ -81,6 +82,7 @@ public class ResourceImpl extends NamedElementImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void clean() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT
@@ -92,6 +94,7 @@ public class ResourceImpl extends NamedElementImpl implements Resource {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void idle() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT

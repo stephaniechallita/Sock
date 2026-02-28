@@ -73,6 +73,7 @@ public class SockFactoryImpl extends EFactoryImpl implements SockFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public IotSystem createIotSystem() {
 		IotSystemImpl iotSystem = new IotSystemImpl();
 		return iotSystem;
@@ -83,6 +84,7 @@ public class SockFactoryImpl extends EFactoryImpl implements SockFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Resource createResource() {
 		ResourceImpl resource = new ResourceImpl();
 		return resource;
@@ -93,6 +95,7 @@ public class SockFactoryImpl extends EFactoryImpl implements SockFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public Actor createActor() {
 		ActorImpl actor = new ActorImpl();
 		return actor;
@@ -103,6 +106,7 @@ public class SockFactoryImpl extends EFactoryImpl implements SockFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public MaliciousActor createMaliciousActor() {
 		MaliciousActorImpl maliciousActor = new MaliciousActorImpl();
 		return maliciousActor;
@@ -113,6 +117,7 @@ public class SockFactoryImpl extends EFactoryImpl implements SockFactory {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SockPackage getSockPackage() {
 		return (SockPackage) getEPackage();
 	}

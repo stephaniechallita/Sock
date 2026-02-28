@@ -104,6 +104,7 @@ public class IotSystemImpl extends NamedElementImpl implements IotSystem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Actor> getOwnedActor() {
 		if (ownedActor == null) {
 			ownedActor = new EObjectContainmentEList<Actor>(Actor.class, this, SockPackage.IOT_SYSTEM__OWNED_ACTOR);
@@ -116,6 +117,7 @@ public class IotSystemImpl extends NamedElementImpl implements IotSystem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EList<Resource> getOwnedResource() {
 		if (ownedResource == null) {
 			ownedResource = new EObjectContainmentEList<Resource>(Resource.class, this,
@@ -129,6 +131,7 @@ public class IotSystemImpl extends NamedElementImpl implements IotSystem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public int getCurrentTime() {
 		return currentTime;
 	}
@@ -138,6 +141,7 @@ public class IotSystemImpl extends NamedElementImpl implements IotSystem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void setCurrentTime(int newCurrentTime) {
 		int oldCurrentTime = currentTime;
 		currentTime = newCurrentTime;
@@ -151,6 +155,7 @@ public class IotSystemImpl extends NamedElementImpl implements IotSystem {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public void time() {
 		// TODO: implement this method
 		// Ensure that you remove @generated or mark it @generated NOT

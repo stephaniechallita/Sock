@@ -129,6 +129,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getNamedElement() {
 		return namedElementEClass;
 	}
@@ -138,6 +139,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getNamedElement_Name() {
 		return (EAttribute) namedElementEClass.getEStructuralFeatures().get(0);
 	}
@@ -147,6 +149,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getIotSystem() {
 		return iotSystemEClass;
 	}
@@ -156,6 +159,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getIotSystem_OwnedActor() {
 		return (EReference) iotSystemEClass.getEStructuralFeatures().get(0);
 	}
@@ -165,6 +169,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getIotSystem_OwnedResource() {
 		return (EReference) iotSystemEClass.getEStructuralFeatures().get(1);
 	}
@@ -174,6 +179,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getIotSystem_CurrentTime() {
 		return (EAttribute) iotSystemEClass.getEStructuralFeatures().get(2);
 	}
@@ -183,6 +189,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getIotSystem__Time() {
 		return iotSystemEClass.getEOperations().get(0);
 	}
@@ -192,6 +199,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getResource() {
 		return resourceEClass;
 	}
@@ -201,6 +209,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getResource_Actor() {
 		return (EReference) resourceEClass.getEStructuralFeatures().get(0);
 	}
@@ -210,6 +219,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getResource__Clean() {
 		return resourceEClass.getEOperations().get(0);
 	}
@@ -219,6 +229,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getResource__Idle() {
 		return resourceEClass.getEOperations().get(1);
 	}
@@ -228,6 +239,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getActor() {
 		return actorEClass;
 	}
@@ -237,6 +249,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EReference getActor_Resource() {
 		return (EReference) actorEClass.getEStructuralFeatures().get(0);
 	}
@@ -246,6 +259,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getActor_IsSensible() {
 		return (EAttribute) actorEClass.getEStructuralFeatures().get(1);
 	}
@@ -255,6 +269,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getActor_ProcessTime() {
 		return (EAttribute) actorEClass.getEStructuralFeatures().get(2);
 	}
@@ -264,6 +279,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getActor_PeriodTime() {
 		return (EAttribute) actorEClass.getEStructuralFeatures().get(3);
 	}
@@ -273,6 +289,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getActor_CurrentProcessTime() {
 		return (EAttribute) actorEClass.getEStructuralFeatures().get(4);
 	}
@@ -282,6 +299,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EAttribute getActor_Code() {
 		return (EAttribute) actorEClass.getEStructuralFeatures().get(5);
 	}
@@ -291,6 +309,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getActor__Ready() {
 		return actorEClass.getEOperations().get(0);
 	}
@@ -300,6 +319,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getActor__EnterIn() {
 		return actorEClass.getEOperations().get(1);
 	}
@@ -309,6 +329,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getActor__Process() {
 		return actorEClass.getEOperations().get(2);
 	}
@@ -318,6 +339,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getActor__ExitOf() {
 		return actorEClass.getEOperations().get(3);
 	}
@@ -327,6 +349,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EOperation getActor__Idle() {
 		return actorEClass.getEOperations().get(4);
 	}
@@ -336,6 +359,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public EClass getMaliciousActor() {
 		return maliciousActorEClass;
 	}
@@ -345,6 +369,7 @@ public class SockPackageImpl extends EPackageImpl implements SockPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	@Override
 	public SockFactory getSockFactory() {
 		return (SockFactory) getEFactoryInstance();
 	}
