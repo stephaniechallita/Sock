@@ -56,7 +56,9 @@ public class IOUtils {
 	}
 	
 	public static void writeRaw(String toBeWritten, String path) {
-		try (FileWriter writer = new FileWriter(new File(BASE_PATH_OUTPUT + path), true)) {
+		final File outputFile = new File(BASE_PATH_OUTPUT + path);
+		System.out.println(String.format("Writing to %s", outputFile.getAbsoluteFile()));
+		try (FileWriter writer = new FileWriter(outputFile, true)) {
 			writer.write(toBeWritten + NEW_LINE);
 		} catch (Exception ignored) {
 		}
