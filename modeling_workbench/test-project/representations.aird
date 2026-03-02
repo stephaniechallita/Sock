@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:sock="http://kairos.inria.fr/sock" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
-  <viewpoint:DAnalysis uid="_bz0fsI-UEeq1eNQf4XJawQ" selectedViews="_eiqEgI-UEeq1eNQf4XJawQ" version="14.1.0.201810161215">
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:description_1="http://www.eclipse.org/sirius/diagram/description/1.1.0" xmlns:diagram="http://www.eclipse.org/sirius/diagram/1.1.0" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.3/notation" xmlns:sock="http://kairos.inria.fr/sock" xmlns:style="http://www.eclipse.org/sirius/diagram/description/style/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description http://www.eclipse.org/sirius/diagram/description/style/1.1.0 http://www.eclipse.org/sirius/diagram/1.1.0#//description/style">
+  <viewpoint:DAnalysis uid="_bz0fsI-UEeq1eNQf4XJawQ" selectedViews="_eiqEgI-UEeq1eNQf4XJawQ" version="15.0.0.202201261500">
     <semanticResources>test.sock</semanticResources>
     <semanticResources>platform:/plugin/fr.inria.aoste.timesquare.ccslkernel.model/ccsllibrary/kernel.ccslLib</semanticResources>
     <semanticResources>DisabledButterFly.tsock</semanticResources>
@@ -50,19 +50,38 @@
     <semanticResources>gemoc-gen/s0.prioritymodel</semanticResources>
     <semanticResources>gemoc-gen/s0.msemodel</semanticResources>
     <semanticResources>gemoc-gen/execution/execution-20200517_174217/s0.tsock</semanticResources>
+    <semanticResources>manual/sockExample.tsock</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20260301_070232/sockExample.tsock</semanticResources>
+    <semanticResources>gemoc-gen/execution/execution-20260301_070248/sockExample.tsock</semanticResources>
+    <semanticResources>bin/arinc653/arinc653.tsock</semanticResources>
+    <semanticResources>bin/butterfly/DisabledButterFly.tsock</semanticResources>
+    <semanticResources>bin/butterfly/EnabledButterFly.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst0.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst1.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst2.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst3.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst4.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst5.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst6.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst7.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst8.tsock</semanticResources>
+    <semanticResources>bin/generated/GenSyst9.tsock</semanticResources>
+    <semanticResources>bin/manual/sockExample.tsock</semanticResources>
+    <semanticResources>bin/sockExample.sock</semanticResources>
+    <semanticResources>connected_heater/connected_heater.tsock</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_eiqEgI-UEeq1eNQf4XJawQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fV77kI-UEeq1eNQf4XJawQ" name="test Sock Diagram" repPath="#_fS7D0I-UEeq1eNQf4XJawQ">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_fV77kI-UEeq1eNQf4XJawQ" name="test Sock Diagram" repPath="#_fS7D0I-UEeq1eNQf4XJawQ" changeId="04c97260-cbf3-4583-b2a8-6f962599b6e0">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']"/>
         <target xmi:type="sock:IotSystem" href="test.sock#/"/>
       </ownedRepresentationDescriptors>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_r63OYI_ZEeqJwPyB4ntppQ" name="new Sock Diagram" repPath="#_r6nWwI_ZEeqJwPyB4ntppQ">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_r63OYI_ZEeqJwPyB4ntppQ" name="new Sock Diagram" repPath="#_r6nWwI_ZEeqJwPyB4ntppQ" changeId="7959208e-d473-4d65-bf4e-38efbaff8162">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']"/>
         <target xmi:type="sock:IotSystem" href="test.sock#/"/>
       </ownedRepresentationDescriptors>
     </ownedViews>
   </viewpoint:DAnalysis>
-  <diagram:DSemanticDiagram uid="_fS7D0I-UEeq1eNQf4XJawQ" name="test Sock Diagram">
+  <diagram:DSemanticDiagram uid="_fS7D0I-UEeq1eNQf4XJawQ">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_fVyKkI-UEeq1eNQf4XJawQ" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_fVz_wI-UEeq1eNQf4XJawQ"/>
     </ownedAnnotationEntries>
@@ -229,7 +248,7 @@
     <activatedLayers xmi:type="description_1:AdditionalLayer" href="platform:/plugin/fr.inria.kairos.sock.dsl.design/description/sock.odesign#//@ownedViewpoints[name='MyViewpoint']/@ownedRepresentations[name='Sock%20Diagram']/@defaultLayer"/>
     <target xmi:type="sock:IotSystem" href="test.sock#/"/>
   </diagram:DSemanticDiagram>
-  <diagram:DSemanticDiagram uid="_r6nWwI_ZEeqJwPyB4ntppQ" name="new Sock Diagram">
+  <diagram:DSemanticDiagram uid="_r6nWwI_ZEeqJwPyB4ntppQ">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_r6v5oI_ZEeqJwPyB4ntppQ" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_r6v5oY_ZEeqJwPyB4ntppQ"/>
     </ownedAnnotationEntries>
